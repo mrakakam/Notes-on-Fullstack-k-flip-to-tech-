@@ -1,0 +1,173 @@
+a variable is simple a name that refers to an object in memory
+
+datatype is the value stored inside a variable
+
+number one type of datatype in python is intergal and intergal is a number 
+
+string is also a datatype in python
+
+boolean (true/false) is also a datatype in python
+
+In Python, list is a mutable data type, which means you can change 
+its content after creating it (add, remove, or modify elements).
+# creating a list
+fruits = ["apple", "banana", "cherry"]
+print("Original list:", fruits)
+
+# modifying an element
+fruits[1] = "orange"
+print("After modifying:", fruits)
+
+# adding a new element
+fruits.append("mango")
+print("After adding:", fruits)
+
+# removing an element
+fruits.remove("apple")
+print("After removing:", fruits)
+
+
+A tuple is an ordered, immutable collection in Python.
+Example of a Tuple
+# Creating a tuple
+colors = ("red", "green", "blue")
+print(colors)
+print(type(colors))   # <class 'tuple'>
+
+
+A set is an unordered, mutable, and unique collection of items in Python.
+Example of a Set
+fruits = {"apple", "banana", "cherry"}
+print(fruits)
+print(type(fruits))   # <class 'set'>
+
+
+So the quick memory trick is:
+[] → list
+() → tuple
+{} → set (or dict if empty)
+
+
+a function in python is block of reusable codes
+
+operators in python below:
+Arithmetic Operators
+Comparison (Relational) Operators
+Logical Operators
+Assignment Operators
+Bitwise Operators
+Membership Operators
+Identity Operators
+
+
+
+Arithmetic Operators
+x = 10
+y = 3
+print(x + y)   # Addition → 13
+print(x - y)   # Subtraction → 7
+print(x * y)   # Multiplication → 30
+print(x / y)   # Division → 3.333...
+print(x // y)  # Floor Division → 3
+print(x % y)   # Modulus (remainder) → 1
+print(x ** y)  # Exponentiation → 1000
+
+
+
+Comparison (Relational) Operators
+a, b = 5, 10
+print(a == b)  # Equal → False
+print(a != b)  # Not equal → True
+print(a > b)   # Greater than → False
+print(a < b)   # Less than → True
+print(a >= b)  # Greater or equal → False
+print(a <= b)  # Less or equal → True
+
+
+Logical Operators
+Used with boolean values.
+x = True
+y = False
+print(x and y)   # AND → False
+print(x or y)    # OR → True
+print(not x)     # NOT → False
+
+
+Assignment Operators
+Used to assign values to variables.
+a = 5
+a += 3   # a = a + 3 → 8
+a -= 2   # a = a - 2 → 6
+a *= 2   # a = a * 2 → 12
+a /= 4   # a = a / 4 → 3.0
+a %= 2   # a = a % 2 → 1.0
+a **= 3  # a = a ** 3 → 1.0
+
+
+Bitwise Operators
+Work on binary numbers.
+x = 6   # 110 (binary)
+y = 3   # 011 (binary)
+print(x & y)   # AND → 2 (010)
+print(x | y)   # OR → 7 (111)
+print(x ^ y)   # XOR → 5 (101)
+print(~x)      # NOT → -7
+print(x << 1)  # Left shift → 12 (1100)
+print(x >> 1)  # Right shift → 3 (011)
+
+
+Membership Operators
+Check if a value is in a sequence.
+fruits = ["apple", "banana"]
+print("apple" in fruits)      # True
+print("mango" not in fruits)  # True
+
+
+
+Identity Operators
+Compare memory locations of objects.
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+print(a is b)      # True (same object in memory)
+print(a is c)      # False (different objects, same values)
+print(a is not c)  # True
+
+
+Function Syntax in Python
+def function_name(parameters):
+   
+    Optional docstring explaining the function
+   
+    # function body (code to run)
+    return value   # optional
+
+
+Function with Parameters
+
+def greet_user(name):
+    print("Hello,", name)
+
+greet_user("Alice")
+
+
+
+
+
+In Python, a function is defined using the def keyword.
+Here’s the basic syntax:
+
+Example 1: A simple function without parameters
+def greet():
+    print("Hello, welcome to Python!")
+
+
+Example 2: Function with parameters
+def add(a, b):
+    return a + b
+
+
+
+Example 3: Function with default parameter
+def greet_user(name="Guest"):
+    print(f"Hello, {name}!")
