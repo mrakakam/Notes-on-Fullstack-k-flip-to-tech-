@@ -1,0 +1,693 @@
+JavaScript can "display" data in different ways:
+
+Writing into an HTML element, using innerHTML or innerText.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log().
+
+
+F12 on your keyboard will activate debugging. easy way to check your console
+
+
+window.print() method in the browser to print the content of the current window.
+
+The + operator joins text (strings) and other values together into a single string. 
+If the value is not already text (like a number), JavaScript automatically converts it into text before joining.
+
+
+Semicolons ;
+Semicolons separate JavaScript statements.
+Add a semicolon at the end of each executable statement:
+Examples
+let a, b, c;  // Declare 3 variables
+a = 5;        // Assign the value 5 to a
+b = 6;        // Assign the value 6 to b
+c = a + b;    // Assign the sum of a and b to c
+
+var	Declares a variable
+let	Declares a block variable
+const	Declares a block constant
+if	Marks a block of statements to be executed on a condition
+switch	Marks a block of statements to be executed in different cases
+for	Marks a block of statements to be executed in a loop
+function	Declares a function
+() =>		Declares a function
+return	Exits a function
+try	Implements error handling to a block of statements
+
+
+The JavaScript syntax defines two types of values:
+
+Fixed values
+Variable values
+Fixed values are called Literals.
+
+Variable values are called Variables.
+
+Strings are text, written within double or single quotes
+
+An equal sign = is used to assign values to variables.
+
+JavaScript uses arithmetic operators ( + - * / ) to compute values
+
+
+JavaScript Expressions
+An expression is a combination of values, variables, and operators, which computes to a value.
+The computation is called an evaluation.
+
+For example, 5 * 10 evaluates to 50:
+For example, "John" + " " + "Doe", evaluates to "John Doe":
+
+
+Code after double slashes // or between /* and */ is treated as a comment.
+Comments are ignored, and will not be executed:
+
+Hyphens are not allowed in JavaScript. They are reserved for subtractions.
+
+Underscore:
+
+first_name, last_name, master_card, inter_city.
+
+Upper Camel Case (Pascal Case):
+
+FirstName, LastName, MasterCard, InterCity.
+
+
+Lower Camel Case:
+
+JavaScript programmers tend to use camel case that starts with a lowercase letter:
+
+firstName, lastName, masterCard, interCity.
+
+Always use const if the value should not be changed
+
+The "equal to" operator is written like == in JavaScript.
+
+In the JavaScript library jQuery, for instance, the main function $ is used to select HTML elements.
+In jQuery $("p"); means "select all p elements".
+
+Always declare a variable with const when you know that the value should not be changed.
+Use const when you declare:
+A new Array
+A new Object
+A new Function
+A new RegExp
+
+
+Javascript operators are used to perform different types of mathematical and logical computations.
+Examples:
+The Assignment Operator = assigns values
+
+The Addition Operator + adds values
+
+The Multiplication Operator * multiplies values
+
+The Comparison Operator > compares values
+
+The Division operator /  Divides the left number by the right number.
+
+
+The **** (exponentiation) operator in JavaScript raises the left operand (base)
+to the power of the right operand (exponent). e.g below
+console.log(2 ** 3);   // 8   (2 × 2 × 2)
+
+
+The % operator (modulus) returns the remainder left over when the left number is divided by the right number.
+e.g below
+console.log(10 % 3);  // 1   (10 ÷ 3 = 3 remainder 1)
+
+The increment operator ++ increases a variable’s value by 1. e.g below
+let a = 5;
+console.log(a++); // prints 5 (uses old value)
+console.log(a);   // now a is 6
+
+
+The pre-increment operator (++x) increases the value of a variable by 1 before it is used in an expression.
+👉 In other words:
+Add 1 to the variable.
+Then use the updated value immediately. e.g below
+let x = 5;
+console.log(++x); // 6 (increments first, then prints)
+console.log(x);   // 6 (x is now permanently updated)
+
+diffrence between pre-increment and post-increment
+
+1. Pre-increment (++x)
+
+The variable is incremented first (value increases by 1).
+
+Then, the new value is used in the expression.
+Example:
+let x = 5;
+let y = 10 + ++x;  
+// Step 1: x becomes 6
+// Step 2: 10 + 6 = 16
+console.log(y); // 16
+console.log(x); // 6
+
+2. Post-increment (x++)
+
+The variable’s current value is used first in the expression.
+
+Then, the variable is incremented afterwards.
+
+Example:
+let a = 5;
+let b = 10 + a++;  
+// Step 1: use a’s current value (5), so 10 + 5 = 15
+// Step 2: THEN a becomes 6
+console.log(b); // 15
+console.log(a); // 6
+
+
+
+The decrement operator -- decreases a variable’s value by 1.
+👉 It’s the opposite of the increment operator (++).
+
+The difference between Pre-decrement (--x) and Post-decrement (x--)
+
+1. Pre-decrement (--x)
+
+The variable is decremented first (subtracts 1 immediately).
+
+Then, the new value is used in the expression.
+
+Example:
+let x = 5;
+let y = 10 + --x;
+// Step 1: x becomes 4
+// Step 2: 10 + 4 = 14
+console.log(y); // 14
+console.log(x); // 4
+
+2. Post-decrement (x--)
+
+The current value is used first in the expression.
+
+Then, the variable is decremented afterwards.
+
+Example:
+let a = 5;
+let b = 10 + a--;
+// Step 1: use a’s current value (5), so 10 + 5 = 15
+// Step 2: THEN a becomes 4
+console.log(b); // 15
+console.log(a); // 4
+
+
+1. String Operators
+
+The main string operator is the + (concatenation) operator.
+
+It joins strings together into one.
+
+let first = "Hello";
+let second = "World";
+console.log(first + " " + second); // "Hello World"
+
+
+There’s also += for appending:
+
+let msg = "Hi";
+msg += " there!";
+console.log(msg); // "Hi there!"
+
+
+2. Logical Operators
+
+Used to combine or invert boolean values (true / false).
+
+&& (AND) → true if both conditions are true.
+
+|| (OR) → true if at least one condition is true.
+
+! (NOT) → flips true ↔ false.
+
+
+3. Bitwise Operators
+
+Work at the binary (bit) level of numbers.
+
+Examples:
+
+& (AND)
+
+| (OR)
+
+^ (XOR)
+
+~ (NOT / invert bits)
+
+<< (left shift)
+
+>> (right shift)
+
+
+
+4. Ternary Operator (?:)
+
+A shorthand for if...else in one line.
+condition ?  represent 'IF' valueIfTrue condition :  represent 'ELSE' valueIfFalse;
+
+
+Example 1: Simple usage
+let age = 18;
+let canVote = (age >= 18) ? "Yes, you can vote" : "No, too young";
+console.log(canVote); // "Yes, you can vote"
+
+
+👉 Reads like:
+
+If age >= 18 is true, return "Yes, you can vote".
+
+Otherwise, return "No, too young".
+
+✅ Example 2: Without ternary (normal if/else)
+let age = 18;
+let canVote;
+
+if (age >= 18) {
+  canVote = "Yes, you can vote";
+} else {
+  canVote = "No, too young";
+}
+
+
+5. Type Operators
+
+Used to check or convert types.
+
+typeof → returns the type of a variable.
+
+console.log(typeof "Hello"); // "string"
+console.log(typeof 42);      // "number"
+
+
+instanceof → checks if an object is an instance of a class.
+
+let arr = [];
+console.log(arr instanceof Array); // true
+
+
+
+JavaScript Comparison Operators
+==	equal to
+===	equal value and equal type
+!=	not equal
+!==	not equal value or not equal type
+>	greater than
+<	less than
+>=	greater than or equal to
+<=	less than or equal to
+?	ternary operator
+
+
+The += assignment operator can also be used to add (concatenate) strings:
+Example
+let text1 = "What a very ";
+text1 += "nice day";
+The result of text1 will be:
+What a very nice day
+
+
+JavaScript Logical Operators
+
+1. AND (&&) Returns true only if both conditions are true.
+
+let age = 20;
+let hasID = true;
+if (age >= 18 && hasID) {
+  console.log("You can enter"); // ✅
+}
+
+2. OR (||) Returns true if at least one condition is true.
+
+let isWeekend = false;
+let isHoliday = true;
+if (isWeekend || isHoliday) {
+  console.log("You can rest today"); // ✅
+}
+
+3. NOT (!) Reverses the boolean value (flips true ↔ false).
+
+let isLoggedIn = false;
+
+if (!isLoggedIn) {
+  console.log("Access denied. Please log in.");
+} else {
+  console.log("Welcome back!");
+}
+
+What is !! ?
+
+The ! operator flips a value’s truthiness:
+
+Truthy → false
+
+Falsy → true
+
+If you apply it twice (!!), it flips back again → giving you the actual boolean value (true or false).
+👉 In short:
+!!value converts any value to a real boolean (true or false).
+
+
+Truthy vs Falsy in JavaScript
+
+In JavaScript, not just true and false are treated as booleans.
+Values are automatically considered either:
+
+Truthy → behaves like true
+
+Falsy → behaves like false
+
+
+✅ Falsy values (important list)
+
+There are only 7 falsy values in JavaScript:
+
+false
+
+0
+
+-0
+
+0n (BigInt zero)
+
+"" (empty string)
+
+null
+
+undefined
+
+NaN
+
+Everything else is truthy.
+
+
+Truthy Values in JavaScript
+
+Non-empty strings
+
+"hello"
+
+"0"
+
+"false"
+
+" " (string with a space)
+
+Any number except 0 and NaN
+
+1, -1, 3.14, 100, -50, etc.
+
+Infinity and -Infinity
+
+Arrays (even empty ones)
+
+[] → empty array is still truthy
+
+[1, 2, 3]
+
+Objects (even empty ones)
+
+{} → empty object is truthy
+
+{ name: "Kim" }
+
+Functions
+
+function() {}
+
+() => {}
+
+Dates
+
+new Date()
+
+Symbols
+
+Symbol("id")
+
+
+
+
+The typeof operator in JavaScript is used to find the data type of a value or variable.
+It always returns a string describing the type.
+
+🔹 Basic Examples
+console.log(typeof "Hello");   // "string"
+console.log(typeof 42);        // "number"
+console.log(typeof true);      // "boolean"
+console.log(typeof undefined); // "undefined"
+
+
+In normal assignment, you use = to assign a value to a variable:
+let totalCost = 500;
+
+In an object literal, you use : to assign a value to a property:
+let obj = {
+    totalCost: 500
+};
+
+
+An object literal is the simplest way to create an object in JavaScript.
+It uses curly braces {} to directly define properties (key–value pairs) and their values.
+
+✅ Basic Example
+let person = {
+  name: "Emma",
+  age: 25,
+  isStudent: true
+};
+
+Example Here:
+name → property (key) with value "Emma"
+age → property with value 25
+isStudent → property with value true
+This whole { name: "Emma", age: 25, isStudent: true } is an object literal.
+
+In code editors, yellow text usually indicates a keyword, function name, variable,
+or sometimes a warning, but it depends on your editor and its syntax highlighting rules.
+
+For is a loop statement used to repeatedly execute a block of code a certain number of times.
+It’s one of the most common ways to iterate over arrays, objects, or just run code multiple times.
+
+
+The IN operator checks if a property exists in an object.
+Example:
+let account = { accountNumber: "123", balance: 100 };
+console.log("balance" in account); // true
+console.log("status" in account);  // false
+
+In JavaScript, of is part of the for...of loop (not a standalone operator like + or ==).
+It’s used to loop through the values inside an iterable (like an array, string, Map, Set, etc.).
+
+for...of → loops through values
+for...in → loops through keys (or indexes)
+
+of is not an operator — it’s part of the special loop syntax for...of
+
+
+
+for (initialization; condition; update) {
+    // code block to repeat
+}
+English Explanation of Each Part
+Initialization → This is where you create and set up a counter variable (like let i = 0;).
+👉 It runs only once at the start of the loop.
+
+Condition → This is checked before every loop run.
+👉 If it’s true, the loop continues.
+👉 If it’s false, the loop stops.
+
+Update (Increment/Decrement) → This happens after each loop run.
+👉 Usually, we increase (i++) or decrease (i--) the counter.
+
+Code Block → The statements inside { } are executed each time the loop runs.
+
+🔹 Example in Code
+for (let i = 0; i < 5; i++) {
+    console.log("Loop number:", i);
+}
+🔹 Example in English
+Start with i = 0.
+
+Check: Is i < 5? If yes → run the block.
+
+Print "Loop number: i".
+
+Increase i by 1.
+
+Repeat steps 2–4 until i is not less than 5.
+
+Stop the loop.
+
+
+Normal for loop,This is the “classic” loop:
+for (let i = 0; i < 3; i++) {
+    console.log(i);
+}
+Start: let i = 0
+
+Condition: i < 3 (keeps looping while true)
+
+Increment: i++ (increase counter after each loop)
+
+
+In for...in and for...of, the start, condition, and increment are hidden.
+
+
+for...in loop
+const user = { name: "Alice", age: 25, city: "Lagos" };
+for (let key in user) {
+    console.log(key, ":", user[key]);
+}
+Here, you don’t see start/condition/increment.
+Instead, JavaScript automatically does this:
+
+Start: It gets the list of all property names from the object: ["name", "age", "city"].
+
+Condition: As long as there are still properties left, the loop continues.
+
+Increment: Move to the next property automatically
+
+
+for...of loop
+const colors = ["red", "green", "blue"];
+for (let color of colors) {
+    console.log(color);
+}
+JavaScript does this internally:
+
+Start: Take the first element of the iterable ("red").
+
+Condition: Keep looping while there are more items in the array.
+
+Increment: Move to the next element ("green", then "blue").
+
+
+
+parseFloat() is a built-in JavaScript function that converts a string into a 
+floating-point number (a number with decimals).
+👉 Syntax:
+parseFloat(string)
+
+Examples
+parseFloat("10.5");      // 10.5   ✅ converted to a number
+parseFloat("3.14abc");   // 3.14   ✅ stops at "a"
+parseFloat("100");       // 100    ✅ integer becomes a float
+parseFloat("abc123");    // NaN    ❌ doesn't start with a number
+
+
+isNaN(value) is a built-in JavaScript function that checks if a value is NaN (which means Not a Number).
+NaN stands for "Not-a-Number".
+It’s a special numeric value in JavaScript that represents something that isn’t a valid number,
+ even though it’s technically of type "number".
+
+
+JavaScript Function Syntax below
+function name(p1, p2, p3) { // code }
+
+
+invoking a function means calling it so that its code runs.
+There are a few ways to do it:
+
+1. Basic Function Invocation
+function greet() {
+  console.log("Hello!");
+}
+// invoke (call) the function:
+greet();  // Output: Hello!
+Here, greet(); is the invocation
+
+
+2. Function with Parameters
+Example: Function with Parameters
+// Function with parameters (price and quantity)
+function calculateTotal(price, quantity) {
+  let total = price * quantity;
+  return total;
+}
+// Invoke (call) the function with arguments
+let item1 = calculateTotal(500, 3); // 500 × 3
+let item2 = calculateTotal(1200, 2); // 1200 × 2
+
+console.log("Item 1 total: ₦" + item1); // Output: Item 1 total: ₦1500
+console.log("Item 2 total: ₦" + item2); // Output: Item 2 total: ₦2400
+
+Here:
+calculateTotal(price, quantity) is the function with parameters.
+calculateTotal(500, 3) is invoking it with arguments.
+The function multiplies them and returns the result.
+
+
+3. Assigning Function to a Variable
+const sayHi = function() {
+  console.log("Hi there!");
+};
+
+// invoke:
+sayHi(); // Output: Hi there!
+
+
+4. Arrow Function Invocation
+const multiply = (x, y) => x * y;
+
+// invoke:
+console.log(multiply(4, 6)); // Output: 24
+
+
+5. Immediately Invoked Function Expression (IIFE)
+
+This runs right after it’s defined:
+
+(function() {
+  console.log("I run immediately!");
+})(); 
+// Output: I run immediately!
+
+
+
+
+
+In JavaScript, function parameters and arguments are distinct concepts:
+
+
+Parameters are the names listed in the function definition.
+Parameters are the names of the values that will be passed.
+Example
+"name" and "age" are parameters:
+
+function greet(name, age) {
+  return `Hello $name! You are ${age} years old.`;
+}
+
+
+
+Arguments are the values passed to the function when it is invoked or called.
+
+Arguments are the values received by the function.
+Note: The "john" is a double quotation string and the 21 is a number 
+they're both values.
+
+Example
+"John" and 21 are arguments:
+
+greet("John", 21);
+
+
+
+Key Difference
+
+Parameters → The placeholders you write in the function definition.
+
+Arguments → The actual values (with or without datatype) you pass when calling the function.
+
+
+
+🔹 Function as a “Key–Value” System
+Parameters → act like the keys / placeholders in the function definition.
+Arguments → are the values you pass in when you call the function.
+
+
+

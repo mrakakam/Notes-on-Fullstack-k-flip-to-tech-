@@ -1,0 +1,8 @@
+// LOGICAL STRUCTURE BREAKDOWN:
+function processData(input) {
+    // 1. VALIDATION PHASE - Check if input is valid
+    // 2. INITIALIZATION PHASE - Set up variables and state
+    // 3. PROCESSING PHASE - Transform data step by step
+    // 4. DECISION PHASE - Make logical choices based on conditions
+    // 5. OUTPUT PHASE - Return meaningful results
+}

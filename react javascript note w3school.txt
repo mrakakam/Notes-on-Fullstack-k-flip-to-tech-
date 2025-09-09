@@ -1,0 +1,50 @@
+A React component is just a function that returns some JSX (HTML-like syntax).
+
+React components must start with a capital letter.
+
+.render is not embedded in JavaScript — it’s a method that React gives you.
+
+
+.render() is a method provided by React’s root object.
+
+
+Diffrence between innerhtml and .render()
+
+innerHTML works with raw HTML strings → " <h1>Hello</h1> ".
+
+.render() works with React elements/components → <Hello />.
+
+innerHTML always replaces everything inside the element.
+
+.render() updates only what changes, making React much faster for big apps.
+
+
+In React, a function component must start with a capital letter to distinguish it from standard HTML elements. 
+Here's an example:
+import { createRoot } from 'react-dom/client';
+
+function Greeting() {
+  return <h1>Hi!</h1>;
+}
+
+function App() {
+  return <Greeting />;
+}
+
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
+
+
+React is a front-end JavaScript library.
+
+React was developed by the Facebook Software Engineer Jordan Walke.
+
+React is also known as React.js or ReactJS.
+
+React is a tool for building UI components.
+
+
+
+
+
+

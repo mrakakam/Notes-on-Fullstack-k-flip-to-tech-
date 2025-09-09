@@ -1,0 +1,61 @@
+When a variable is declared with the let keyword, you can reassign (or change the value of) that variable later on.
+Note that when reassigning a variable, you do not use the let keyword again.
+
+
+Camel case means that the first word in the name is entirely lowercase, but the following words are all title-cased.
+ Here are some examples of camel case:
+
+Example Code
+let variableOne;
+let secondVariable;
+let yetAnotherVariable;
+
+
+An array is a non-primitive data type that can hold a series of values. 
+Non-primitive data types differ from primitive data types in that they can hold more complex data. 
+Primitive data types like strings and numbers can only hold one value at a time.
+
+
+Arrays are denoted using square brackets ([]). Here is an example of a variable with the value of an empty array:
+Example Code
+let array = [];
+
+Commas are used to separate items within arrays, properties within object literals,
+and arguments in function calls or parameters in function declarations.
+Example Code below
+    // Array literal
+    const colors = ["red", "green", "blue"];
+
+    // Object literal
+    const person = { name: "Alice", age: 30 };
+
+    // Function call arguments
+    console.log("Hello", "World");
+
+    // Function declaration parameters
+    function greet(firstName, lastName) {
+      // ...
+    }
+
+You can access the values inside an array using the index of the value.
+An index is a number representing the position of the value in the array, 
+starting from 0 for the first value.
+Example Code below
+You can access the value using bracket notation, such as array[0].
+
+
+Arrays are special in that they are considered mutable. This means you can change the value at an index directly.
+For example, this code would assign the number 25 to the second element in the array:
+Example Code
+let array = [1, 2, 3];
+array[1] = 25;
+console.log(array); // prints [1, 25, 3]
+note: it is changing the index 1 which is "2" to 25
+
+
+.length property of an array - this returns the number of elements in the array.
+To get the last element of any array, you can use the following syntax:
+Example Code
+array[array.length - 1]
+array.length returns the number of elements in the array. By subtracting 1, 
+you get the index of the last element in the array.
