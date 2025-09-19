@@ -1,0 +1,54 @@
+Note: How to Show Hidden Content When Clicked in React
+Import useState from React — it lets your component “remember” things.
+Make a state variable (e.g., showMenu) that starts as false (hidden).
+Add a click handler to a button or image. When clicked, flip the state (true = show, false = hide).
+Conditionally render the hidden content with {showMenu && <div>...</div>}.
+This means: only display <div> if showMenu is true.
+Do not add hidden CSS inside that div, because React is already controlling whether it shows or not.
+
+💻 Example Code
+
+import { useState } from "react";
+
+export default function ToggleMenu() {
+  // Step 2: create state (false = hidden at first)
+  const [showMenu, setShowMenu] = useState(false);
+
+  return (
+    <div>
+      {/* Step 3: click to toggle */}
+      <img
+        src="settings.png"
+        alt="settings"
+        className="cursor-pointer"
+        onClick={() => setShowMenu(prev => !prev)}
+      />
+
+      {/* Step 4: show content only when showMenu is true */}
+      {showMenu && (
+        <div className="p-4 bg-gray-200 rounded">
+          <h5>Temperature</h5>
+          <button>Celsius (°C)</button>
+          <button>Fahrenheit (°F)</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+In plain words:
+
+Click the image → React flips showMenu → React decides if the div should be displayed.
+
+
+
+
+— useState, useEffect, and useRef are built-in React Hooks.
+They all come from the React library itself, so you don’t install anything extra. You just import them:
+import { useState, useEffect, useRef } from "react";
+Quick breakdown:
+useState → lets your component “remember” values between re-renders.
+Example: track if the menu is open or closed.
+useEffect → runs side effects (extra code that’s not just rendering).
+Example: adding/removing the event listener for outside clicks.
+useRef → gives you a way to directly reference a DOM element or store a value that persists without causing re-renders.

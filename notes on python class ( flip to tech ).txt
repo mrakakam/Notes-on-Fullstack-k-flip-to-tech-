@@ -171,3 +171,9 @@ def add(a, b):
 Example 3: Function with default parameter
 def greet_user(name="Guest"):
     print(f"Hello, {name}!")
+
+
+Parameters are variables listed inside the parentheses of a function definition.  
+They act as placeholders for the values (arguments) you pass when calling the function.
+
+
