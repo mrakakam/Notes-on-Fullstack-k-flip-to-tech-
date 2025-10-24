@@ -176,4 +176,31 @@ def greet_user(name="Guest"):
 Parameters are variables listed inside the parentheses of a function definition.  
 They act as placeholders for the values (arguments) you pass when calling the function.
 
+oop is a program paradigm  that organize around object rather than just function and 
+procedure. oop helps you build reuseable modular coes that are easier to maintain.
+
+excapsulation is one of the pillars of oop, excapsulation is more like building 
+parameter and method using into sinle unit and controlling access to them
+
+inheritance is just creating new class base on existing class to reuse codes
+
+polymorphism allowing diffrent class to be treated as instance of the same 
+class through a common interface
+
+abstraction it is hiding complex implementation details and exposing only
+what is neccessary.
+
+
+a class in python is a blueprint for creating object
+a class define the data and method and object will have
+
+an object in python is an instance of a class 
+
+attribute are variable attach to object or classess
+instance attribute are unique to each object and are always define in method
+class attribute are attribute shared by all object of a class 
+
+
+
+
 
