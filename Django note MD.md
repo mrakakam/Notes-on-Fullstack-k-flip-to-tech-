@@ -406,6 +406,38 @@ class StudentTest(TestCase):
 
 &nbsp;       s = Student.objects.create(name="John", age=20)
 
+
+
+KYC stands for Know Your Customer.
+
+In backend development, KYC means the system checks and verifies who the user really is before giving full access — especially in apps like banking, crypto, fintech, marketplaces, etc.
+
+Why do we do KYC?
+
+To prevent fraud (fake accounts)
+
+To stop money laundering
+
+To follow legal regulations
+
+To make sure users are real humans with valid identity
+
+
+
+A ForeignKey in Django is used to create a One-to-Many relationship between two tables.
+
+Meaning:
+
+One record in Table A can have many related records in Table B.
+
+Example in real life:
+
+One User can have many Posts
+
+One Customer can have many Orders
+
+One Teacher can have many Students
+
 &nbsp;       self.assertEqual(s.name, "John")
 
 
@@ -1191,4 +1223,102 @@ class IsOwner(BasePermission):
         return obj.owner == request.user
 
 
+A ForeignKey in Django is used to create a One-to-Many relationship between two tables.
+
+Meaning:
+
+One record in Table A can have many related records in Table B.
+
+Example in real life:
+
+One User can have many Posts
+
+One Customer can have many Orders
+
+One Teacher can have many Students
+
+
+KYC stands for Know Your Customer.
+
+In backend development, KYC means the system checks and verifies who the user really is before giving full access — especially in apps like banking, crypto, fintech, marketplaces, etc.
+
+Why do we do KYC?
+
+To prevent fraud (fake accounts)
+
+To stop money laundering
+
+To follow legal regulations
+
+To make sure users are real humans with valid identity
+
+
+1. One-to-One Relationship
+
+One record belongs to only one other record.
+
+📌 Example:
+
+One user has one profile
+
+One car has one engine number
+
+Syntax
+user = models.OneToOneField(User, on_delete=models.CASCADE)
+
+Meaning
+
+User ↔️ Profile (1 to 1)
+
+✅ 2. One-to-Many Relationship (Most Common)
+
+One item can have many related items.
+
+📌 Example:
+
+One user can have many posts
+
+One category can have many products
+
+Syntax
+user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+Meaning
+
+User ➝ Post (1 user, many posts)
+
+✅ 3. Many-to-Many Relationship
+
+Many items can relate to many items.
+
+📌 Example:
+
+A student can enroll in many courses
+
+A course can have many students
+
+Syntax
+students = models.ManyToManyField(Student)
+
+Meaning
+
+Students ⇆ Courses (many to many)
+
+
+fieldsets is usually defined inside admin.py when customizing how your model looks in the Django Admin form.
+Example: admin.py
+
+Suppose you have a model Student:
+
+# models.py
+from django.db import models
+
+class Student(models.Model):
+    name = models.CharField(max_length=100)
+    age = models.IntegerField()
+    email = models.EmailField()
+    course = models.CharField(max_length=200)
+    enrolled_date = models.DateField()
+
+Now to organize it inside admin using fieldsets, go to admin.py:
 

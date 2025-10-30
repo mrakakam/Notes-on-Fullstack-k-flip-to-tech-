@@ -1,0 +1,7 @@
+python decouple 
+
+pip install celery
+
+pip install cors-header 
+
+pip install pillow
