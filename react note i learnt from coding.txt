@@ -334,4 +334,80 @@ src/
       hero.jpg
       logo.svg
       icons/
+
+
+
+
+✅ Short Note on ES6 Classes
+
+ES6 classes are a modern way in JavaScript to create objects and reuse object structure.
+A class acts like a blueprint, and we create objects from it using the new keyword.
+
+Classes can have a constructor() method, which runs automatically when a new object is created. 
+The constructor initializes the object’s properties. It helps us pass values when making an object and sets them using this.
+
+📌 Example
+class Car {
+  constructor(name) {
+    this.brand = name;   // set object property
+  }
+}
+
+const myCar = new Car("Ford");
+console.log(myCar.brand); // Output: Ford
+
+✅ Key Points
+
+Class = blueprint for objects
+
+constructor() runs when creating a new object
+
+this refers to that specific object
+
+Objects are created using new
+
+
+✅ What is constructor()?
+
+The constructor() is a special method inside a JavaScript class.
+It runs automatically when you create an object from that class.
+
+Its main job is to set initial values (properties) for the object.
+
+✅ Why is it important?
+
+Initializes object data
+
+Receives values when creating an object
+
+Helps avoid repeating the same setup code
+
+📌 Example
+class Car {
+  constructor(name) {
+    this.brand = name;  // assigns the value to the object
+  }
+}
+
+const myCar = new Car("Toyota");  
+console.log(myCar.brand); // Toyota
+
+
+constructor(name) receives "Toyota" and assigns it to the object property brand.
+
+✅ Key Points
+
+Only one constructor allowed in a class
+
+Runs automatically
+
+Used to set up object properties
+
+Uses this to refer to the new object
+
+🧠 Quick Memory Trick
+
+Class = blueprint
+constructor() = start engine & set settings
+new Car("Toyota") = build a real car from blueprint
                             |

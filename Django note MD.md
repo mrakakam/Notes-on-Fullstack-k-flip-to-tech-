@@ -1322,3 +1322,4 @@ class Student(models.Model):
 
 Now to organize it inside admin using fieldsets, go to admin.py:
 
+
